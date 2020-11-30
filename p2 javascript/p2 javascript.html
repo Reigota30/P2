@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Registro de Notas</title>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' href='p2 javascript.css'>
+    <script src='p2 javascript.js'></script>
+    
+    </script>
+</head>
+<body>
+
+        <div class="container">
+          <h2>Tabela de Notas e Médias</h2>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Turma</th>
+                <th>Disciplina</th>
+                <th>N1</th>
+                <th>N2</th>
+                <th>N3</th>
+                <th>Média</th>
+                <th>Situação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>100</td>
+                <td>Joao</td>
+                <td>1A</td>
+                <td>S.O.</td>
+                <td><input id="n1_aluno_0" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(0)"></td>
+                <td><input id="n2_aluno_0" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(0)"></td>
+                <td><input id="n3_aluno_0" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(0)"></td>
+                <td><div id="media_aluno_0"> </div></td>
+                <td><div id="resultado_aluno_0">-- </div></td>
+              </tr>
+              <tr>
+                <td>200</td>
+                <td>Ana</td>
+                <td>1A</td>
+                <td>S.O.</td>
+                <td><input id="n1_aluno_1" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(1)"></td>
+                <td><input id="n2_aluno_1" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(1)"></td>
+                <td><input id="n3_aluno_1" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(1)"></td>
+                <td><div id="media_aluno_1"> </div></td>
+                <td><div id="resultado_aluno_1">-- </div></td>
+              </tr>
+              <tr>
+                <td>300</td>
+                <td>Maria</td>
+                <td>1A</td>
+                <td>JAVASCRIPT</td>
+                <td><input id="n1_aluno_2" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(2)"></td>
+                <td><input id="n2_aluno_2" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(2)"></td>
+                <td><input id="n3_aluno_2" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(2)"></td>
+                <td><div id="media_aluno_2"> </div></td>
+                <td><div id="resultado_aluno_2">-- </div></td>
+              </tr>
+              <tr>
+                <td>400</td>
+                <td>Antonio</td>
+                <td>1A</td>
+                <td>JAVASCRIPT</td>
+                <td><input id="n1_aluno_3" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(3)"></td>
+                <td><input id="n2_aluno_3" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(3)"></td>
+                <td><input id="n3_aluno_3" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(3)"></td>
+                <td><div id="media_aluno_3"> </div></td>
+                <td><div id="resultado_aluno_3">-- </div></td>
+              </tr>
+              <tr>
+                <td>500</td>
+                <td>Carlos</td>
+                <td>1A</td>
+                <td>JAVASCRIPT</td>
+                <td><input id="n1_aluno_4" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(4)"></td>
+                <td><input id="n2_aluno_4" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(4)"></td>
+                <td><input id="n3_aluno_4" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(4)"></td>
+                <td><div id="media_aluno_4"> </div></td>
+                <td><div id="resultado_aluno_4">-- </div></td>
+              </tr>
+              <tr>
+                <td>600</td>
+                <td>Camila</td>
+                <td>1A</td>
+                <td>COMPILADORES</td>
+                <td><input id="n1_aluno_5" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(5)"></td>
+                <td><input id="n2_aluno_5" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(5)"></td>
+                <td><input id="n3_aluno_5" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(5)"></td>
+                <td><div id="media_aluno_5"> </div></td>
+                <td><div id="resultado_aluno_5">-- </div></td>
+              </tr>
+              <tr>
+                <td>700</td>
+                <td>José</td>
+                <td>1A</td>
+                <td>COMPILADORES</td>
+                <td><input id="n1_aluno_6" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(6)"></td>
+                <td><input id="n2_aluno_6" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(6)"></td>
+                <td><input id="n3_aluno_6" type="number" value="0" min="0.0" step="0.1" max="10.0" onchange="calcula_media(6)"></td>
+                <td><div id="media_aluno_6"> </div></td>
+                <td><div id="resultado_aluno_6">-- </div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+</body>

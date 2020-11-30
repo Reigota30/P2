@@ -1,0 +1,16 @@
+ td input{
+    background-color: rgb(243, 243, 51);
+}
+td div{
+    background-color: rgb(15, 241, 223);
+}
+thead tr th{
+    background-color: rgb(31, 176, 233);
+}
+ td {
+    background-color: rgb(243, 230, 230);
+}
+table{
+    border: solid 5px;
+    color: black;
+}
